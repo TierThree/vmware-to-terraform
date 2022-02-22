@@ -202,5 +202,6 @@ resource `"vsphere_virtual_machine`" `"vm`" {  `
 
   $terraform_output += $rsc_block
 
-  Write-Host $terraform_output
+  $filename = ".\\" + $vmname + ".tf"
+  $terraform_output | Out-File -FilePath $filename
 }
