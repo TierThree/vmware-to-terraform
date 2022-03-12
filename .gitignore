@@ -1,0 +1,2 @@
+# Ignore all .tf files
+*.tf
